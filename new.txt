@@ -1,2 +1,1 @@
-Git study
-Thomas
+检查是否上传到远程库
