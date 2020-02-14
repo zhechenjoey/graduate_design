@@ -1,0 +1,92 @@
+* {
+    font-family: '微软雅黑';
+}
+
+.msgbox {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 999;
+    opacity: 0.7;
+    border: none;
+}
+
+.smfont {
+    font-size: 0.8rem;
+}
+
+.vlogo {
+    width: 20%;
+    margin: 20px 0;
+}
+
+.topic {
+    position: relative;
+    overflow: hidden;
+}
+
+.topic a {
+    float: left;
+}
+
+.topic div {
+    float: right;
+}
+
+.slide-fade {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .1s cubic-bezier(2.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    left: 0;
+    right: 0;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 100%;
+    -webkit-animation: scaleout 1.0s infinite ease-in-out;
+    animation: scaleout 1.0s infinite ease-in-out;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    z-index: 5;
+}
+
+@-webkit-keyframes scaleout {
+    0% {
+        -webkit-transform: scale(0.0)
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleout {
+    0% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
